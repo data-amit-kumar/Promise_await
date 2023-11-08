@@ -42,7 +42,11 @@ async function h() {
         await Promise.all([createPost({ title: 'Fourth' }), updateLastUserActivityTime()]);
         await Promise.all([createPost({ title: 'Fifth' }), updateLastUserActivityTime()]);
         await deletePost();
-       
+        await deletePost();
+        await deletePost();
+        await deletePost();
+        await deletePost();
+        await deletePost();
     } catch (error) {
         console.error('Error:', error);
     }
